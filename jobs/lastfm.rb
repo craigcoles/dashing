@@ -11,6 +11,6 @@ SCHEDULER.every '1m', :first_in => 0 do |job|
 	response = http.request(Net::HTTP::Get.new("/2.0/?method=user.getrecenttracks&user=#{username}&api_key=#{api_key}"))
 	user_id = XmlSimple.xml_in(response.body, { 'ForceArray' => false })['recenttracks']
 	song = XmlSimple.xml_in(response.body, { 'ForceArray' => false })['recenttracks']['track'][0]
-  send_event('lastfm', { :cover => song['image'][2]['content'], :artist => song['artist']['content'], :name => song['name'] })
+  	send_event('lastfm', { :cover => song['image'][2]['content'], :artist => song['artist']['content'], :name => song['name'] })
 
 end
