@@ -1,0 +1,30 @@
+<% content_for(:title) { "The Chopping Board" } %>
+
+<div class="gridster">
+  
+  <ul>
+    
+    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="time" data-view="Clock" data-title="Hello"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="weather" data-view="Weather"></div>
+    </li>
+    
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="lastfm" data-view="lastfm"></div>
+      <i class="icon-play icon-background"></i>
+    </li>
+    
+    <li data-row="1" data-col="2" data-sizex="2" data-sizey="1">
+      <div data-id="twitter_mentions" data-view="Comments" style="background-color:#ff9618;" data-moreinfo="Tweets tagged with #todayilearned"></div>
+      <i class="icon-twitter icon-background"></i>
+    </li>
+    
+  </ul>
+  
+  <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
+  
+</div>
