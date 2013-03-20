@@ -1,6 +1,17 @@
+GIT
+  remote: git://github.com/Sija/garb.git
+  revision: 72ce3c61ea8ddee620cd3bfbceda92b7f8afdaef
+  specs:
+    garb (0.9.7)
+      activesupport (>= 2.2)
+      multi_json (>= 1.3)
+
 GEM
   remote: http://rubygems.org/
   specs:
+    activesupport (3.2.13)
+      i18n (= 0.6.1)
+      multi_json (~> 1.0)
     backports (3.1.1)
     coffee-script (2.2.0)
       coffee-script-source
@@ -21,6 +32,7 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     hike (1.2.1)
+    i18n (0.6.1)
     multi_json (1.7.1)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -60,4 +72,5 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  garb!
   xml-simple
