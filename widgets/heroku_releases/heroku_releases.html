@@ -1,0 +1,11 @@
+<h1 class="title" data-bind="title"></h1>
+
+<ul class="list-nostyle">
+  <li data-foreach-item="releases">
+    <span class="app" data-bind="item.app"></span>
+    <span class="version" data-bind="item.version"></span>
+    <span class="date" data-bind="item.date"></span>
+    <span class="last-commit-by" data-bind="item.last-commit-by"></span>
+  </li>
+</ul>
+
